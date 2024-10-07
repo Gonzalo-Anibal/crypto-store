@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
+Node version 20.17.0
+npm  version 10.8.2
+
+## pages
+
+Las paginas principales son: 
+
+- /auth
+- /banner
+- /wallet
+
+## models
+
+El modelo `CoinQuoteDTO` sera el resultado del precio actualizado de las cryptos.
+
+El modelo `CoinTransactionModel` son los resultados de la api de transacciones.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

@@ -1,0 +1,159 @@
+
+@if(stockData) {
+    <mat-card class="crypto-currency" appearance="outlined">
+        <mat-expansion-panel class="crypto-currency">
+            <mat-expansion-panel-header>
+                <mat-card-header>
+                    <div mat-card-avatar class="coin-icon"></div>
+                    <mat-card-title>{{ stockData.symbol }}</mat-card-title>
+                    <mat-card-subtitle>{{ stockData.companyName }}</mat-card-subtitle>
+                    
+                </mat-card-header>
+                <mat-card-content class="container">
+                    <p class="fw-bold"> {{ stockData.lastSalePrice }} USD</p>
+                </mat-card-content>
+            </mat-expansion-panel-header>
+                <mat-card-footer>
+                    @if(stockData.deltaIndicator == 'up') {
+                        <div class="price">
+                            <div mat-card-sm-image class="arrow-up">
+                                <a class="mount-up ps-4">{{ stockData.percentageChange }}</a>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <a class="mount-up">{{ stockData.netChange }}</a>
+                            <a class="divisa"> USD</a>
+                        </div>
+                    } @else {
+                        <div class="price">
+                            <div mat-card-sm-image class="arrow-down">
+                                <a class="mount-down ps-4">{{ stockData.percentageChange }}</a>
+                            </div>
+                            <div class="price">
+                                <a class="mount-down">{{ stockData.netChange }}</a>
+                                <a class="divisa"> USD</a>
+                            </div>
+                        </div>
+                    }
+                </mat-card-footer>
+                
+            
+        
+            <!-- <mat-card-footer>
+                <span>Datos obtenidos de la API de Nasdaq</span>
+            </mat-card-footer> -->
+        </mat-expansion-panel>
+    </mat-card>
+}
+
+  
+
+<!-- <mat-expansion-panel class="crypto-currency">
+    <mat-expansion-panel-header>
+        @if(stockData) {
+            <mat-card class="crypto-price" appearance="outlined">
+                <mat-card-header>
+                    <div mat-card-avatar class="coin-icon"></div>
+                    <mat-card-title>{{ stockData.symbol }}</mat-card-title>
+                    <mat-card-subtitle>{{ stockData.companyName }}</mat-card-subtitle>
+                </mat-card-header>
+            
+                <mat-card-content class="container">
+                    <p class="fw-bold"> {{ stockData.lastSalePrice }} USD</p>
+                </mat-card-content>
+            
+            </mat-card>
+        }
+    </mat-expansion-panel-header>
+  
+    @if(stockData) {
+        <mat-card class="crypto-price" appearance="outlined">
+            <mat-card-content class="container">
+                @if(stockData.deltaIndicator == 'up') {
+                    <div class="price">
+                        <div mat-card-sm-image class="arrow-up">
+                            <a class="mount-up ps-4">{{ stockData.percentageChange }}</a>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <a class="mount-up">{{ stockData.netChange }}</a>
+                        <a class="divisa"> USD</a>
+                    </div>
+                } @else {
+                    <div class="price">
+                        <div mat-card-sm-image class="arrow-down">
+                            <a class="mount-down ps-4">{{ stockData.percentageChange }}</a>
+                        </div>
+                        <div class="price">
+                            <a class="mount-down">{{ stockData.netChange }}</a>
+                            <a class="divisa"> USD</a>
+                        </div>
+                    </div>
+                }
+            </mat-card-content>
+        
+        </mat-card>
+    }
+    
+  </mat-expansion-panel> -->
+  
+
+<!-- <mat-expansion-panel class="crypto-currency">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ stockData.symbol }}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ stockData.lastSalePrice }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    @if(stockData) {
+        <mat-card class="crypto-price" appearance="outlined">
+            <mat-card-header>
+                <div mat-card-avatar class="coin-icon"></div>
+                <mat-card-title>{{ stockData.symbol }}</mat-card-title>
+                <mat-card-subtitle>{{ stockData.companyName }}</mat-card-subtitle>
+            </mat-card-header>
+        
+            <mat-card-content class="container">
+                <p class="fw-bold"> {{ stockData.lastSalePrice }} USD</p>
+                @if(stockData.deltaIndicator == 'up') {
+                    <div class="price">
+                        <div mat-card-sm-image class="arrow-up">
+                            <a class="mount-up ps-4">{{ stockData.percentageChange }}</a>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <a class="mount-up">{{ stockData.netChange }}</a>
+                        <a class="divisa"> USD</a>
+                    </div>
+                } @else {
+                    <div class="price">
+                        <div mat-card-sm-image class="arrow-down">
+                            <a class="mount-down ps-4">{{ stockData.percentageChange }}</a>
+                        </div>
+                        <div class="price">
+                            <a class="mount-down">{{ stockData.netChange }}</a>
+                            <a class="divisa"> USD</a>
+                        </div>
+                    </div>
+                }
+            </mat-card-content>
+        
+        </mat-card>
+    }
+    
+  </mat-expansion-panel> -->
+  
+
+
+<!-- <div *ngIf="stockData">
+    <h2>{{ stockData.companyName }} ({{ stockData.symbol }})</h2>
+    <p>Last Sale Price: {{ stockData.lastSalePrice }}</p>
+    <p>Net Change: {{ stockData.netChange }}</p>
+    <p>Percentage Change: {{ stockData.percentageChange }}</p>
+    <p>Delta: {{ stockData.deltaIndicator }}</p>
+    <p>Last Trade: {{ stockData.lastTradeTimestamp }}</p>
+</div> -->
+

@@ -1,0 +1,36 @@
+{
+    "data": {
+        "symbol": "ADA",
+        "companyName": "Cardano",
+        "stockType": null,
+        "exchange": null,
+        "isNasdaqListed": false,
+        "isNasdaq100": false,
+        "isHeld": false,
+        "primaryData": {
+            "lastSalePrice": "$0.3586",
+            "netChange": "+0.0052",
+            "percentageChange": "+1.47%",
+            "deltaIndicator": "up",
+            "lastTradeTimestamp": "Oct 7, 2024 11:48 AM ET ",
+            "isRealTime": true,
+            "bidPrice": "",
+            "askPrice": "",
+            "bidSize": "",
+            "askSize": "",
+            "volume": "",
+            "currency": null
+        },
+        "secondaryData": null,
+        "marketStatus": "Open",
+        "assetClass": "CRYPTO",
+        "keyStats": null,
+        "notifications": null
+    },
+    "message": null,
+    "status": {
+        "rCode": 200,
+        "bCodeMessage": null,
+        "developerMessage": null
+    }
+}

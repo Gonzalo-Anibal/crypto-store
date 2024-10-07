@@ -1,0 +1,26 @@
+<h1>Mi saldo</h1>
+
+@if (coin) {
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar class="coin-icon"></div>
+            <mat-card-title>{{ coin.symbol }}</mat-card-title>
+            <mat-card-subtitle>{{ coin.companyName }}</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+}
+<section>
+    <h3>Venta</h3>
+    <app-history-wallet
+        *ngFor="let transaction of buys"
+    ></app-history-wallet>
+</section>
+<section>
+    <h3>Compra</h3>
+    <app-history-wallet
+        *ngFor="let transaction of sells"
+    ></app-history-wallet>
+</section>
+
+<app-buy-coin></app-buy-coin>
+<app-sell-coin></app-sell-coin>

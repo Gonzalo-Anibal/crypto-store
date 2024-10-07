@@ -1,0 +1,36 @@
+{
+    "data": {
+        "symbol": "ETH",
+        "companyName": "Ethereum",
+        "stockType": null,
+        "exchange": null,
+        "isNasdaqListed": false,
+        "isNasdaq100": false,
+        "isHeld": false,
+        "primaryData": {
+            "lastSalePrice": "$2,483.98",
+            "netChange": "+37.36",
+            "percentageChange": "+1.53%",
+            "deltaIndicator": "up",
+            "lastTradeTimestamp": "Oct 7, 2024 11:41 AM ET ",
+            "isRealTime": true,
+            "bidPrice": "",
+            "askPrice": "",
+            "bidSize": "",
+            "askSize": "",
+            "volume": "",
+            "currency": null
+        },
+        "secondaryData": null,
+        "marketStatus": "Open",
+        "assetClass": "CRYPTO",
+        "keyStats": null,
+        "notifications": null
+    },
+    "message": null,
+    "status": {
+        "rCode": 200,
+        "bCodeMessage": null,
+        "developerMessage": null
+    }
+}

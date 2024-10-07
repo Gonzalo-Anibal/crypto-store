@@ -1,0 +1,36 @@
+{
+    "data": {
+        "symbol": "BTC",
+        "companyName": "Bitcoin",
+        "stockType": null,
+        "exchange": null,
+        "isNasdaqListed": false,
+        "isNasdaq100": false,
+        "isHeld": false,
+        "primaryData": {
+            "lastSalePrice": "$63,779.00",
+            "netChange": "+1,059.00",
+            "percentageChange": "+1.69%",
+            "deltaIndicator": "up",
+            "lastTradeTimestamp": "Oct 7, 2024 11:41 AM ET ",
+            "isRealTime": true,
+            "bidPrice": "",
+            "askPrice": "",
+            "bidSize": "",
+            "askSize": "",
+            "volume": "",
+            "currency": null
+        },
+        "secondaryData": null,
+        "marketStatus": "Open",
+        "assetClass": "CRYPTO",
+        "keyStats": null,
+        "notifications": null
+    },
+    "message": null,
+    "status": {
+        "rCode": 200,
+        "bCodeMessage": null,
+        "developerMessage": null
+    }
+}

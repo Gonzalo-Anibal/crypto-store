@@ -1,0 +1,7 @@
+<p>Top Coins</p>
+<section class="results">
+    <app-crypto-price 
+        *ngFor="let coin of typeCoins"
+        [coin]="coin"
+    ></app-crypto-price>
+</section>

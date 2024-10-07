@@ -1,0 +1,40 @@
+@if(stockData) {
+    <mat-card class="crypto-price" appearance="outlined" (click)="onCardClick()">
+        <mat-card-header>
+            <div mat-card-avatar class="coin-icon"></div>
+            <mat-card-title>{{ stockData.symbol }}</mat-card-title>
+            <mat-card-subtitle>{{ stockData.companyName }}</mat-card-subtitle>
+        </mat-card-header>
+    
+        <mat-card-content class="container">
+            <p class="fw-bold"> {{ stockData.lastSalePrice }} USD</p>
+            @if(stockData.deltaIndicator == 'up') {
+                <div class="price">
+                    <div mat-card-sm-image class="arrow-up">
+                        <a class="mount-up ps-4">{{ stockData.percentageChange }}</a>
+                    </div>
+                </div>
+                <div class="price">
+                    <a class="mount-up">{{ stockData.netChange }}</a>
+                    <a class="divisa"> USD</a>
+                </div>
+            } @else {
+                <div class="price">
+                    <div mat-card-sm-image class="arrow-down">
+                        <a class="mount-down ps-4">{{ stockData.percentageChange }}</a>
+                    </div>
+                    <div class="price">
+                        <a class="mount-down">{{ stockData.netChange }}</a>
+                        <a class="divisa"> USD</a>
+                    </div>
+                </div>
+            }
+        </mat-card-content>
+    
+        <!-- <mat-card-footer>
+            <span>Datos obtenidos de la API de Nasdaq</span>
+        </mat-card-footer> -->
+    </mat-card>
+}
+
+  

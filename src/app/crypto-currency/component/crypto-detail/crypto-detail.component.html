@@ -1,0 +1,27 @@
+@if (coin) {
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar class="coin-icon"></div>
+            <mat-card-title>{{ coin.symbol }}</mat-card-title>
+            <mat-card-subtitle>{{ coin.companyName }}</mat-card-subtitle>
+        </mat-card-header>
+      
+        <mat-card-content>
+          <p><strong>Último precio de venta:</strong> {{ coin.lastSalePrice }}</p>
+          <p><strong>Cambio neto:</strong> {{ coin.netChange }}</p>
+          <p><strong>Cambio porcentual:</strong> {{ coin.percentageChange }}</p>
+          <p><strong>Indicador de cambio:</strong> {{ coin.deltaIndicator }}</p>
+          <p><strong>Última transacción:</strong> {{ coin.lastTradeTimestamp }}</p>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+      
+        <mat-card-footer>
+          <span>Datos obtenidos de la API de Nasdaq</span>
+        </mat-card-footer>
+      </mat-card>
+      
+}

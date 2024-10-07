@@ -1,0 +1,36 @@
+{
+    "data": {
+        "symbol": "XRP",
+        "companyName": "Ripple",
+        "stockType": null,
+        "exchange": null,
+        "isNasdaqListed": false,
+        "isNasdaq100": false,
+        "isHeld": false,
+        "primaryData": {
+            "lastSalePrice": "$0.5395",
+            "netChange": "+0.0041",
+            "percentageChange": "+0.77%",
+            "deltaIndicator": "up",
+            "lastTradeTimestamp": "Oct 7, 2024 11:49 AM ET ",
+            "isRealTime": true,
+            "bidPrice": "",
+            "askPrice": "",
+            "bidSize": "",
+            "askSize": "",
+            "volume": "",
+            "currency": null
+        },
+        "secondaryData": null,
+        "marketStatus": "Open",
+        "assetClass": "CRYPTO",
+        "keyStats": null,
+        "notifications": null
+    },
+    "message": null,
+    "status": {
+        "rCode": 200,
+        "bCodeMessage": null,
+        "developerMessage": null
+    }
+}
